@@ -1,0 +1,14 @@
+__pycache__/
+*.pkl
+*.npy
+.env
+node_modules/
+dist/
+*.pyc
+.DS_Store
+ml/X_train.npy
+ml/X_test.npy
+ml/y_train.npy
+ml/y_test.npy
+malicious_phish.csv
+archive/

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+httpx
+python-whois
+dnspython
+joblib
+numpy
+xgboost
+python-Levenshtein
+pydantic>=2.0
+python-dotenv

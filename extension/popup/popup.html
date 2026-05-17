@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">🛡️ PhishGuard</div>
+  </div>
+  
+  <div class="main-content">
+    <div id="loading" class="panel text-center">
+      <div class="spinner"></div>
+      <p>Analyzing current page...</p>
+    </div>
+
+    <div id="result-panel" class="panel hidden">
+      <div class="flex-between">
+        <h2 id="url-display" class="truncate" title=""></h2>
+        <span id="risk-badge" class="badge"></span>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Confidence</div>
+          <div id="confidence-val" class="stat-value"></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Risk Score</div>
+          <div id="risk-val" class="stat-value"></div>
+        </div>
+      </div>
+
+      <div class="features-section">
+        <div class="stat-label">Suspicious Features</div>
+        <ul id="features-list" class="feature-list"></ul>
+      </div>
+
+      <div class="actions">
+        <button id="btn-scan-again" class="btn btn-secondary">Scan Again</button>
+        <button id="btn-view-report" class="btn btn-primary">View Full Report</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="history-section">
+    <h3 class="history-title">Recent Scans</h3>
+    <div id="history-list"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
