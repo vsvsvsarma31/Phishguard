@@ -72,7 +72,7 @@ export default function ScanHistory() {
             className="bg-slate-800 border border-slate-700 rounded-lg px-3 py-1.5 text-sm text-white focus:outline-none focus:border-[#38bdf8]"
           >
             <option value="ALL">All Labels</option>
-            <option value="BENIGN">Benign</option>
+            <option value="BENIGN">Safe</option>
             <option value="PHISHING">Phishing</option>
             <option value="MALWARE">Malware</option>
             <option value="DEFACEMENT">Defacement</option>
@@ -101,7 +101,7 @@ export default function ScanHistory() {
                   {item.url.length > 60 ? item.url.substring(0, 60) + '...' : item.url}
                 </td>
                 <td className={`px-6 py-3 font-semibold uppercase tracking-wider text-xs ${TEXT_COLORS[item.label] || 'text-slate-400'}`}>
-                  {item.label}
+                  {item.label === 'benign' ? 'Safe' : item.label}
                 </td>
                 <td className="px-6 py-3 text-right text-slate-300">
                   {(item.risk_score * 100).toFixed(0)}

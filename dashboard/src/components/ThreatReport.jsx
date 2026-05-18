@@ -80,7 +80,7 @@ export default function ThreatReport() {
       else if (scan.label === 'defacement') doc.setTextColor(202, 138, 4); // yellow-600
       else doc.setTextColor(22, 163, 74); // green-600
       
-      doc.text(`Classification: ${scan.label.toUpperCase()}`, 14, yPos);
+      doc.text(`Classification: ${scan.label === 'benign' ? 'SAFE' : scan.label.toUpperCase()}`, 14, yPos);
       
       doc.setTextColor(71, 85, 105); // slate-600
       doc.text(`Risk Score: ${(scan.risk_score * 100).toFixed(1)}/100`, 80, yPos);
@@ -182,7 +182,7 @@ export default function ThreatReport() {
                       scan.label === 'defacement' ? 'bg-yellow-500/10 text-yellow-400' :
                       'bg-emerald-500/10 text-emerald-400'
                     }`}>
-                      {scan.label}
+                      {scan.label === 'benign' ? 'Safe' : scan.label}
                     </span>
                   </td>
                 </tr>

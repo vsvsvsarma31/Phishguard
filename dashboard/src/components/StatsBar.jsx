@@ -31,7 +31,7 @@ export default function StatsBar({ stats }) {
       <StatCard icon="📊" label="Avg Risk Score" value={stats.avg_risk_score}
                 sub={stats.avg_risk_score < 30 ? "Low risk" : stats.avg_risk_score < 60 ? "Moderate" : "High risk"}
                 color={stats.avg_risk_score < 30 ? "#22c55e" : stats.avg_risk_score < 60 ? "#f97316" : "#ef4444"} />
-      <StatCard icon="🛡️" label="Benign Rate"
+      <StatCard icon="🛡️" label="Safe Rate"
                 value={`${stats.total_scans > 0 ? (((stats.total_scans - stats.threats_detected) / stats.total_scans) * 100).toFixed(0) : 0}%`}
                 color="#22c55e" />
     </div>

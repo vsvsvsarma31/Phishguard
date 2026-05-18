@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                            
         div.innerHTML = `
           <div class="history-url truncate" title="${item.url}">${item.url}</div>
-          <div class="history-label ${labelClass}">${item.label.toUpperCase()}</div>
+          <div class="history-label ${labelClass}">${item.label === 'benign' ? 'SAFE' : item.label.toUpperCase()}</div>
         `;
         historyList.appendChild(div);
       });
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     urlDisplay.textContent = result.url;
     urlDisplay.title = result.url;
     
-    riskBadge.textContent = result.label.toUpperCase();
+    riskBadge.textContent = result.label === 'benign' ? 'SAFE' : result.label.toUpperCase();
     
     let badgeClass = 'bg-red';
     if (result.label === 'benign') badgeClass = 'bg-green';

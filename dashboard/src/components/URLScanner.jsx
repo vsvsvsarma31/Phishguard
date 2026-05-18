@@ -85,7 +85,7 @@ export default function URLScanner() {
               <p className="text-slate-400 text-sm">Scanned at {new Date(result.timestamp).toLocaleString()}</p>
             </div>
             <div className={`px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider ${RISK_COLORS[result.label] || RISK_COLORS.unknown}`}>
-              {result.label}
+              {result.label === 'benign' ? 'Safe' : result.label}
             </div>
           </div>
 

@@ -48,7 +48,7 @@ export default function RiskChart() {
 
   // Format data for BarChart (Label Distribution)
   const labelData = [
-    { name: 'Benign', value: stats.benign_count, color: LABEL_COLORS.benign },
+    { name: 'Safe', value: stats.benign_count, color: LABEL_COLORS.benign },
     { name: 'Phishing', value: stats.phishing_count, color: LABEL_COLORS.phishing },
     { name: 'Malware', value: stats.malware_count, color: LABEL_COLORS.malware },
     { name: 'Defacement', value: stats.defacement_count, color: LABEL_COLORS.defacement },
