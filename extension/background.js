@@ -26,7 +26,7 @@ async function analyzeUrl(url) {
     }
   }
 
-  // Fetch from backend
+
   try {
     const response = await fetch(BACKEND_URL, {
       method: 'POST',
