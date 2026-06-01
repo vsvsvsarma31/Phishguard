@@ -3,6 +3,7 @@ import base64
 from PIL import Image, ImageDraw
 
 # Create directory
+# naa istam ochindhi raskunta
 icon_dir = r"e:\Phishguard\phishguard\extension\icons"
 os.makedirs(icon_dir, exist_ok=True)
 
