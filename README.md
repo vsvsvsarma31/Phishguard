@@ -1,5 +1,5 @@
 # PhishGuard 🛡️
-> AI-Powered Phishing URL Detection with Cyber Threat Intelligence
+> Phishing URL Detection with Cyber Threat Intelligence
 
 ## Overview
 
