@@ -4,6 +4,7 @@
 ## Overview
 
 PhishGuard is an end-to-end phishing URL detection system that combines machine learning, cyber threat intelligence, URL obfuscation checks, typosquatting analysis, and DNS/WHOIS enrichment. It includes a FastAPI backend for scanning URLs, a React dashboard for investigation and reporting, and a Chrome extension that automatically checks pages as you browse. The ML pipeline trains on phishing URL datasets such as ISCX URL 2016 or PhishTank-style malicious URL exports. The project is designed for local development, security demos, and rapid experimentation with phishing detection workflows.
+It detects URL is phished or not using the traning given by kaggle dataset operations
 
 ```powershell
 git clone https://github.com/vsvsvsarma31/Phishguard.git
